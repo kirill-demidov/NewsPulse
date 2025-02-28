@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product_name }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #333; color: white; padding: 20px; }
+        section { padding: 20px; max-width: 800px; margin: auto; }
+        .cta { margin-top: 20px; }
+        .cta a { padding: 10px 20px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px; }
+        footer { background: #222; color: white; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ product_name }}</h1>
+        <p>{{ product_description }}</p>
+    </header>
+
+    <section class="cta">
+        <h2>Попробуйте прямо сейчас</h2>
+        <a href="{{ product_link }}" target="_blank">Перейти к приложению</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 {{ product_name }}</p>
+    </footer>
+</body>
+</html>
